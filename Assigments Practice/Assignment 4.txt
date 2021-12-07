@@ -62,7 +62,7 @@ public class Q4 {
 	        System.out.println(arrli);     // print the Array
 	        arrli.remove(3);               //remove the value from the 3 rd index i.e 4.
 	        System.out.println(arrli);     //print the value
-	        for (int i = 0; i < arrli.size(); i++)  // get the values in the value using arrli.get
+	        for (int i = 0; i < arrli.size(); i++)  // get the values in the array using arrli.get
 	            System.out.print(arrli.get(i) +" ");
 	    }
 	}
