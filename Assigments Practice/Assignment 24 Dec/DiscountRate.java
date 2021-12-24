@@ -5,8 +5,8 @@ import java.util.Scanner;
 public class DiscountRate {
 	static float findFinalPricePremieme(float price) {
 		int discount = 20;
-		float discountprice = (price * discount) / 100;
-		return price - discountprice;
+		float discountprice = (price * discount) / 100;       //calculates the discount
+		return price - discountprice;				//returns price after discount
 	}
 
 	static float findFinalPriceGold(float price) {
@@ -26,10 +26,10 @@ public class DiscountRate {
 		int discount;
 
 		Scanner sc = new Scanner(System.in);
-
+		//input by user
 		System.out.println("Enter price of the product :");
 		price = sc.nextInt();
-
+		//printing the values after discount on original price
 		System.out.println("Final price premieme after 20% Discount is" + findFinalPricePremieme(price));
 		System.out.println("Final price Gold after 15% Discount is " + findFinalPriceGold(price));
 		System.out.println("Final price Silver after 10% Discount is " + findFinalPriceSilver(price));
